@@ -65,8 +65,12 @@ return [
     "button" => "Register"
 ];
 ```
+Untuk menampilkannya ke view berikut cara pemanggilannya
 
-Selanjutnya, membuat view registernya
+```
+@lang('file_bahasa/key') 
+```
+
 
 **Resources\views\regis.blade.php**
 
@@ -110,7 +114,7 @@ Selanjutnya, membuat view registernya
 
 ```
 
-lalu, membuat routenya
+lalu, buat routenya
 
 **Routes\web.php**
 
@@ -133,9 +137,9 @@ Kemudian akses halamannya http://127.0.0.1:8000/regis
 <a href="https://ibb.co/Pt67SyX"><img src="https://i.ibb.co/FnDSP1Z/2.png" alt="2" border="0" /></a>
 </p>
 
-Bahasa dari halaman akan berbahasa Inggris, karena Laravel secara default menentukan bahasanya Inggris
+Bahasa dari halaman akan berbahasa Inggris, karena Laravel secara default menentukan bahasanya ke bahasa Inggris
 
-Untuk mengganti bahasa default laravel menjadi Bahasa Indonesia hanya perlu mengganti **'locale' => 'en'** menjadi **'locale' => 'id'** pada file **app.php** di folder **config**
+Untuk mengganti bahasa default laravel menjadi bahasa Indonesia hanya perlu mengganti **'locale' => 'en'** menjadi **'locale' => 'id'** pada file **app.php** di folder **config**
 
 Maka, jika sudah diubah menjadi **'locale' => 'id'** bahasa dari halaman akan berubah menjadi bahasa Indonesia secara default
 
@@ -153,9 +157,15 @@ Route::get('/regis/{locale}', function ($locale) {
 ```
 Lalu, buka halamannya http://127.0.0.1:8000/regis/en
 
+<p align="center">
 <a href="https://ibb.co/SBTH04X"><img src="https://i.ibb.co/nj24fNs/4.png" alt="4" border="0"></a>
+</p>
 
 Halaman akan berbahasa Inggris yang sebelumnya bahasa defaultnya di set **id**. Begitu juga sebaliknya, jika ingin menampilkan halaman berbahasa Indonesia kita hanya perlu menambahkan **id** diakhir alamat http://127.0.0.1:8000/regis/id
+
+
+
+
 
 
 
