@@ -31,7 +31,7 @@ pola dan tanggapan yang sesuai.
 
 Berikut langkah-langkah dalam pembuat chatbot :
 
-1. Import Perpustakaan dan Muat Data 
+1. Import librari
 Buat file python baru dan beri nama sebagai
 train_chatbot dan kemudian kita akan mengimport semua modul yang diperlukan.
 Setelah itu, kita akan membaca file data JSON di program Python
